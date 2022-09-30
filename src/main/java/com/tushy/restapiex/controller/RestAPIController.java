@@ -35,4 +35,8 @@ public class RestAPIController {
         return new ResponseEntity<>(task,HttpStatus.ACCEPTED);
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
