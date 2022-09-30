@@ -21,7 +21,7 @@ public class RestAPIController {
 
         return new ResponseEntity<>("Hello "+name,HttpStatus.ACCEPTED);
     }
-    
+
 
     @PutMapping("/utask/{id}")
     public ResponseEntity<Task> updateTask(@RequestParam(name = "id") Long id,@RequestBody Task task){
