@@ -21,12 +21,7 @@ public class RestAPIController {
 
         return new ResponseEntity<>("Hello "+name,HttpStatus.ACCEPTED);
     }
-
-   /* @GetMapping("/task")
-    public ResponseEntity<List<Task>> getTask( ){
-        List<Task> taskList = taskrepo.findAll();
-        return new ResponseEntity<>(taskrepo,HttpStatus.ACCEPTED);
-    }*/
+    
 
     @PutMapping("/utask/{id}")
     public ResponseEntity<Task> updateTask(@RequestParam(name = "id") Long id,@RequestBody Task task){
